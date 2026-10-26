@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "rootManagementGroupName": {
+      "value": "contoso-root"
+    },
+    "rootManagementGroupDisplayName": {
+      "value": "Contoso Landing Zone Root"
+    },
+    "platformManagementGroupName": {
+      "value": "platform"
+    },
+    "platformManagementGroupDisplayName": {
+      "value": "Platform"
+    },
+    "landingZoneManagementGroupName": {
+      "value": "landing-zones"
+    },
+    "landingZoneManagementGroupDisplayName": {
+      "value": "Landing Zones"
+    },
+    "sandboxManagementGroupName": {
+      "value": "sandbox"
+    },
+    "sandboxManagementGroupDisplayName": {
+      "value": "Sandbox"
+    },
+    "allowedLocations": {
+      "value": [
+        "uksouth",
+        "westeurope"
+      ]
+    },
+    "policyAssignmentLocation": {
+      "value": "uksouth"
+    },
+    "subscriptionPlacements": {
+      "value": [
+        {
+          "managementGroupName": "platform",
+          "subscriptionId": ""
+        },
+        {
+          "managementGroupName": "landing-zones",
+          "subscriptionId": ""
+        },
+        {
+          "managementGroupName": "sandbox",
+          "subscriptionId": ""
+        }
+      ]
+    }
+  }
+}
